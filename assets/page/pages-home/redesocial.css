@@ -1,0 +1,39 @@
+.teste{
+    background: rgb(244,245,250);
+    background: linear-gradient(90deg, rgba(244,245,250,1) 0%, rgba(21,49,97,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*Rede Social*/
+.containerGlobal{
+    display: flex;
+    flex-direction: column;
+}
+.containerGlobal img{
+    width: 100px;
+}
+.content_RS{
+    display: flex;
+    flex-direction: column;
+}
+.containerImage {
+    display: none;
+}
+#area1, #area2, #area3{
+    padding: 10px;
+    width: 100px;
+}
+#area1:hover, #area2:hover, #area3:hover{
+    opacity: 80%;
+}
+.instaFeed{
+    width: 100%;
+    object-fit: cover;
+    display: flex;
+}
+.instaFeed img{
+    padding: 0 10px;
+    border-radius: 30px;
+}
+.instaFeed img:hover{opacity: 80%;}

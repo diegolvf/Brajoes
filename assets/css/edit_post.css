@@ -1,0 +1,570 @@
+@import url('https://fonts.cdnfonts.com/css/poppins');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../img/s-l1600.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+a {
+    text-decoration: none;
+    color: #f4f5fa;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-style: italic;
+    color:#004225;
+    font-size: 2rem;
+    font-weight: 900;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #004225;
+    color: #f4f5fa;
+    align-items: center;
+}
+
+#logo_edit_page {
+    width: 150px;
+    filter: drop-shadow(0px 1px 1px #000000);
+}
+
+header ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+header ul li {
+    justify-content: space-between;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 1.4rem;
+    margin: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 0 1.25rem;
+}
+
+.post-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80vw;
+    height: auto;
+    background-color: #f2f2f2;
+    border-radius: 12px;
+    margin: 10vh 10vh;
+    padding: 15px;
+    box-shadow: -1px 2px 12px -1px rgba(0,0,0,0.77);
+}
+
+label {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 1.3em;
+    color: #004225;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.id-container {
+    display: flex;
+    align-items: baseline;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.id-container input {
+    text-align: center;
+    border-radius: 4px;
+    border: 1px solid #000000;
+    width: 80px;
+    height: 30px;
+}
+
+input::placeholder {
+ text-align: center;
+}
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+}
+
+.title-container input {
+    width: 30vw;
+    height: 5vh;
+    text-align: center;
+    border-radius: 4px;
+    border: 1px solid #000000;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+}
+
+
+.form-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+
+.container-edit-button, .container-back-button {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.edit-button, .back-button {
+    background-color: #004225;
+    color: rgba(255, 255, 255); 
+    text-shadow: -1px -1px 2px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,0.8);
+    padding: 15px 30px;
+    margin: 10px;
+    border: none;
+    border-radius: 4px;
+    font-family: 'Poppins' Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 1em;
+    filter: drop-shadow(0px 1px 1px #000000);
+}
+
+.edit-button:hover {
+    background-color: #ffa500;;
+    transition: 0.40s ease-in-out;
+}
+
+.back-button:hover {
+    background-color: #ffa500;;
+    transition: 0.40s ease-in-out;
+}
+
+.container p {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 0.8em;
+    color: rgba(79,67,174, 0.9);
+    padding: 10px;
+}
+
+
+@media screen and (max-width:376px){
+
+   
+    h1 {
+        font-size: 1rem;
+    }
+
+    header {
+        display: flex;
+        padding: 10px 0;
+        z-index: 2;
+        position: relative;
+        max-width: 100%;
+        padding: 20px;
+    }
+    
+    #logo_edit_page {
+        width: 80px;
+    }
+    
+    .menu-toggle {
+        display: block; /*exibe o menu oculto*/
+        position: absolute;
+        cursor: pointer;
+        padding: 10px;
+        top: 30%;
+        left: 300px;
+    }
+    
+    .menu-toggle span {
+        display: block;
+        width: 25px;
+        height: 2px;
+        background-color: whitesmoke;
+        margin-bottom: 5px;
+        padding: 2px;
+        border-radius: 3px;
+        transition: all ease .2s;
+    }
+    
+    nav a.toggle {
+        display: block;
+        color: whitesmoke;
+        text-decoration: none;
+        padding: 5px;
+    }
+    
+    nav ul {
+        display: none;
+    }
+    
+    nav.active ul li {
+        display: block;
+        padding: 20px;
+        text-align: center;
+        color: whitesmoke;
+    }
+    
+    nav.active ul {
+        display: flex; /*exibir a lista de navegação qdo o menu estiver ativo.*/
+        flex-direction: column;
+        justify-content: unset;
+        background-color: #004225;
+        position: absolute;
+        top: 95%;
+        right: 0;
+        width: 55%;
+        height: auto;
+        border-radius: 5px;
+        z-index: 1;
+        
+    }
+    
+    nav ul li a {
+        font-size: 0.6rem;
+    }
+    
+    nav.active ul li a {
+        display: block;
+        padding: 10px;
+        border-bottom: 1px solid #fff;
+    }
+
+    .container {
+        width: auto;
+    }
+
+    .post-form {
+        z-index: 0;
+        width: 95vw;
+        height: auto;
+    }
+
+    label {
+        font-size: 0.8rem;
+    }
+
+    .title-container input {
+        width: 50vw;
+        height: 5vh;
+    }
+
+    input::placeholder {
+        font-size: 0.6rem;
+        text-align: center;
+    }
+
+    .edit-button, .back-button {
+        padding: 10px 25px;
+        margin: 10px;
+        font-size: 0.6rem;
+        transition: all 0.4s ease-in-out;
+    }
+
+    .post-form {
+        width: 100%;
+        padding: 0;
+    }
+
+    .text-container {
+        max-width: 360px;
+        margin: 0;
+        padding: 0;
+    }
+
+}
+
+
+@media screen and (max-width:361px){
+
+   
+    h1 {
+        font-size: 1rem;
+    }
+
+    header {
+        display: flex;
+        padding: 10px 0;
+        z-index: 2;
+        position: relative;
+        max-width: 100%;
+        padding: 20px;
+    }
+    
+    #logo_edit_page {
+        width: 80px;
+    }
+    
+    .menu-toggle {
+        display: block; /*exibe o menu oculto*/
+        position: absolute;
+        cursor: pointer;
+        padding: 10px;
+        top: 30%;
+        left: 300px;
+    }
+    
+    .menu-toggle span {
+        display: block;
+        width: 25px;
+        height: 2px;
+        background-color: whitesmoke;
+        margin-bottom: 5px;
+        padding: 2px;
+        border-radius: 3px;
+        transition: all ease .2s;
+    }
+    
+    nav a.toggle {
+        display: block;
+        color: whitesmoke;
+        text-decoration: none;
+        padding: 5px;
+    }
+    
+    nav ul {
+        display: none;
+    }
+    
+    nav.active ul li {
+        display: block;
+    }
+    
+    nav.active ul {
+        display: flex; /*exibir a lista de navegação qdo o menu estiver ativo.*/
+        flex-direction: column;
+        justify-content: unset;
+        background-color: #004225;
+        position: absolute;
+        top: 95%;
+        right: 0;
+        width: 55%;
+        height: auto;
+        border-radius: 5px;
+        z-index: 1;
+        
+    }
+    
+    nav ul li a {
+        font-size: 0.6rem;
+    }
+    
+    nav.active ul li {
+        padding: 20px;
+        text-align: center;
+        color: whitesmoke;
+    }
+    
+    nav.active ul li a {
+        display: block;
+        padding: 10px;
+        border-bottom: 1px solid #fff;
+    }
+
+    .container {
+        width: auto;
+    }
+
+    .post-form {
+        z-index: 0;
+        width: 95vw;
+        height: auto;
+    }
+
+    label {
+        font-size: 0.8rem;
+    }
+
+    .title-container input {
+        width: 50vw;
+        height: 5vh;
+    }
+
+    input::placeholder {
+        font-size: 0.6rem;
+        text-align: center;
+    }
+
+    .edit-button, .back-button {
+        padding: 10px 25px;
+        margin: 10px;
+        font-size: 0.6rem;
+        transition: all 0.4s ease-in-out;
+    }
+
+    .post-form {
+        width: 100%;
+        padding: 0;
+    }
+
+    .text-container {
+        max-width: 360px;
+        margin: 0;
+        padding: 0;
+    }
+
+}
+
+@media screen and (max-width:321px) {
+
+   
+    h1 {
+        font-size: 1rem;
+    }
+
+    header {
+        display: flex;
+        padding: 10px 0;
+        z-index: 2;
+        position: relative;
+        max-width: 100%;
+        padding: 20px;
+    }
+    
+    #logo_edit_page {
+        width: 80px;
+    }
+    
+    .menu-toggle {
+        display: block; /*exibe o menu oculto*/
+        position: absolute;
+        cursor: pointer;
+        padding: 10px;
+        top: 30%;
+        left: 260px;
+    }
+    
+    .menu-toggle span {
+        display: block;
+        width: 25px;
+        height: 2px;
+        background-color: whitesmoke;
+        margin-bottom: 5px;
+        padding: 2px;
+        border-radius: 3px;
+        transition: all ease .2s;
+    }
+    
+    nav a.toggle {
+        display: block;
+        color: whitesmoke;
+        text-decoration: none;
+        padding: 5px;
+    }
+    
+    nav ul {
+        display: none;
+    }
+    
+    nav.active ul li {
+        display: block;
+    }
+    
+    nav.active ul {
+        display: flex; /*exibir a lista de navegação qdo o menu estiver ativo.*/
+        flex-direction: column;
+        justify-content: unset;
+        background-color: #004225;
+        position: absolute;
+        top: 95%;
+        right: 0;
+        width: 55%;
+        height: auto;
+        border-radius: 5px;
+        z-index: 1;
+        
+    }
+    
+    nav ul li a {
+        font-size: 0.6rem;
+    }
+    
+    nav.active ul li {
+        padding: 20px;
+        text-align: center;
+        color: whitesmoke;
+    }
+    
+    nav.active ul li a {
+        display: block;
+        padding: 10px;
+        border-bottom: 1px solid #fff;
+    }
+
+    .container {
+        width: auto;
+    }
+
+    .post-form {
+        z-index: 0;
+        width: 95vw;
+        height: auto;
+        margin: 1vh 10vh;
+    }
+
+    label {
+        font-size: 0.8rem;
+    }
+
+    input::placeholder {
+        font-size: 0.6rem;
+        text-align: center;
+    }
+
+    .id-container {
+        padding: 0;
+    }
+
+    #id {
+        width: 65px;
+    }
+
+    .title-container {
+        margin: 0;
+        padding: 0;
+    }
+
+    .title-container input {
+        width: 50vw;
+        height: 5vh;
+    }
+
+    .edit-button, .back-button {
+        padding: 10px 25px;
+        margin: 10px;
+        font-size: 0.6rem;
+        transition: all 0.4s ease-in-out;
+    }
+
+}

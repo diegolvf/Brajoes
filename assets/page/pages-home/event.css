@@ -1,0 +1,233 @@
+/*Texto Eventos*/
+.about-evento{
+    width: 100%;
+    height: 100vh;
+    background-color: #F4F5FA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-event{
+    display: flex;
+    align-items: center;
+    margin: 150px;
+}
+.container-img-p{
+    display: flex;
+    flex-direction: column;
+}
+.container-img-p p{
+    display: flex;
+    justify-content: center;
+    margin: 3px;
+    color: #312D2D;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 1px;
+}
+.container-view{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 100px;
+}
+.container-view h1{
+    color: #153161;
+    font-size: 85px;
+    text-transform: capitalize;
+}
+.container-view h2{
+    color: #153161;
+    font-size: 25px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    padding-bottom: 20px;
+}
+.container-view p{
+    margin: 5px;
+    text-align: justify;
+    color: #312D2D;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 1px;
+}
+.container-view button{
+    margin-top: 30px;
+}
+.img-view img{
+    object-fit: contain;
+    width: 1000px;
+    max-width: 1000px;
+    max-height: 700px;
+}
+.cont{
+    display: flex;
+    justify-content: center;
+}
+@media screen and (max-width: 1600px){
+    .background_img {
+        width: 600px;
+    }
+    .container-view a{
+        align-self: center;
+    }
+    .container-view button{
+        align-self: center;
+        margin-left: 0;
+    }
+}
+@media screen and (max-width: 1500px){
+    .img-view img{
+        object-fit: contain;
+        width: 850px;
+        max-width: 850px;
+        max-height: 550px;
+    }
+    .about-evento{
+        height: 100vh;
+    }
+
+}
+
+@media screen and (max-width: 1400px){
+    .img-view img{
+        object-fit: contain;
+        width: 750px;
+        max-width: 750px;
+        max-height: 500px;
+    }
+    .background_img {
+        left: 83vh;
+        width: 550px;
+    }
+    .container-view h1 {
+        font-size: 65px;
+    }
+    .container-view h2 {
+        font-size: 20px;
+    }
+    .container-view p {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 1300px){
+    .img-view img{
+        object-fit: contain;
+        width: 650px;
+        max-width: 650px;
+        max-height: 500px;
+    }
+    .cont{
+        flex-direction: column;
+    }
+    .home-content {
+        max-width: 500px;
+    }
+    .background_img {
+        left: 73vh;
+    }
+    .background_img {
+        width: 550px;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .img-view img{
+        object-fit: contain;
+        width: 600px;
+        max-width: 600px;
+        max-height: 550px;
+    }
+    .background_img {
+        width: 400px;
+    }
+    .home-content {
+        max-width: 450px;
+    }
+    .background_img {
+        width: 500px;
+        left: 66vh;
+    }
+}
+
+@media screen and (max-width: 1100px){
+    .img-view img{
+        object-fit: contain;
+        width: 550px;
+        max-width: 550px;
+        max-height: 650px;
+    }
+    .home-content {
+        max-width: 400px;
+    }
+    .background_img {
+        width: 520px;
+        left: 59vh;
+    }
+}
+
+
+@media screen and (max-width: 1050px){
+    .img-view img{
+        object-fit: contain;
+        width: 500px;
+        max-width: 500px;
+        max-height: 500px;
+    }
+    .home-content {
+        max-width: 400px;
+    }
+    .background_img {
+        width: 500px;
+        left: 57vh;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .container-event {
+        flex-direction: column;
+    }
+    .cont{
+        flex-direction: row;
+    }
+    .img-view img {
+        object-fit: contain;
+        width: 1000px;
+        max-width: 1000px;
+        max-height: 400px;
+    }
+    .container-view {
+        align-items: center;
+        margin: 0;
+        padding: 20px 100px;
+    }
+    .container-event {
+        margin: 0; 
+   }
+   .about-evento{
+    height: 120vh;
+    }
+
+    /*50 ANOS*/
+    .content-anos {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .gie-section {
+        height: 140vh;
+    }
+    .gie-img img {
+        max-width: 800px;
+        height: 400px;
+    }
+
+    /*Sobre*/
+    .content-sobre {
+        display: flex;
+        flex-direction: column;
+    }
+    .about {
+        height: 180vh;
+    }
+}

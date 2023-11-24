@@ -1,0 +1,940 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    padding: 10px;
+    color: #f4f5fa;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #004225;
+    color: #f4f5fa;
+}
+
+#logo-post {
+    width: 150px;
+    filter: drop-shadow(0px 1px 1px #000000);
+    margin: 0;
+}
+
+header ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+header ul li {
+    justify-content: space-between;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 1.2rem;
+    margin: 20px;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+nav.active ul li {
+    display: none;
+}
+
+#introducao {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 25px;
+}
+
+/* Responsividade */
+
+@media only screen and (max-width: 921px) {
+
+    header {
+        display: flex;
+        padding: 10px 0;
+        z-index: 2;
+        position: relative;
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .menu-toggle {
+        display: block; /*exibe o menu oculto*/
+        position: absolute;
+        cursor: pointer;
+        padding: 10px;
+        top: 30%;
+        left: 830px;
+    }
+
+    .menu-toggle span {
+        display: block;
+        width: 35px;
+        height: 3px;
+        background-color: whitesmoke;
+        margin-bottom: 6px;
+        padding: 3px;
+        border-radius: 3px;
+        transition: all ease .2s;
+    }
+
+    nav a.toggle {
+        display: block;
+        color: whitesmoke;
+        text-decoration: none;
+        padding: 5px;
+    }
+
+    nav ul {
+        display: none;
+    }
+    
+    nav.active ul {
+        display: flex; /*exibir a lista de navegação qdo o menu estiver ativo.*/
+        flex-direction: column;
+        justify-content: unset;
+        background-color: whitesmoke;
+        position: absolute;
+        top: 95%;
+        right: 0;
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+        z-index: 1;
+        
+    }
+
+    nav.active ul li {
+        display: block;
+        text-align: center;
+    }
+
+    nav ul li a {
+        font-size: 0.9rem;
+    }
+
+    nav.active ul li a {
+        display: block;
+        padding: 10px;
+        border-bottom: 1px solid #fff;
+        color: #004225;
+    }
+
+    #logo-post {
+        width: 135px;
+        filter: drop-shadow(0px 1px 1px #000000);
+        align-items: center;
+    }
+
+}
+
+@media only screen and (max-width: 821px) {
+    
+    header {
+        display: flex;
+        padding: 10px 0;
+        z-index: 2;
+        position: relative;
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .menu-toggle {
+        display: block; /*exibe o menu oculto*/
+        position: absolute;
+        cursor: pointer;
+        padding: 10px;
+        top: 30%;
+        left: 725px;
+    }
+
+    .menu-toggle span {
+        display: block;
+        width: 25px;
+        height: 2px;
+        background-color: whitesmoke;
+        margin-bottom: 5px;
+        padding: 2px;
+        border-radius: 3px;
+        transition: all ease .2s;
+    }
+
+    nav a.toggle {
+        display: block;
+        color: whitesmoke;
+        text-decoration: none;
+        padding: 5px;
+    }
+
+    nav ul {
+        display: none;
+    }
+    
+    nav.active ul {
+        display: flex; /*exibir a lista de navegação qdo o menu estiver ativo.*/
+        flex-direction: column;
+        justify-content: unset;
+        background-color: whitesmoke;
+        position: absolute;
+        top: 95%;
+        right: 0;
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+        z-index: 1;
+        
+    }
+
+    nav.active ul li {
+        display: block;
+        text-align: center;
+    }
+
+    nav ul li a {
+        font-size: 0.7rem;
+    }
+
+    nav.active ul li a {
+        display: block;
+        padding: 10px;
+        border-bottom: 1px solid #fff;
+        color: #004225;
+    }
+
+    #logo-post {
+        width: 120px;
+        filter: drop-shadow(0px 1px 1px #000000);
+        align-items: center;
+    }
+
+}
+
+@media only screen and (max-width: 769px) {
+    
+    header {
+        display: flex;
+        padding: 10px 0;
+        z-index: 2;
+        position: relative;
+        max-width: 100%;
+        padding: 20px;
+        filter: drop-shadow(0px 1px 1px #000000);
+    }
+
+    .menu-toggle {
+        display: block; /*exibe o menu oculto*/
+        position: absolute;
+        cursor: pointer;
+        padding: 10px;
+        top: 30%;
+        left: 700px;
+        filter: drop-shadow(0px 1px 1px #000000);
+    }
+
+    .menu-toggle span {
+        display: block;
+        width: 25px;
+        height: 2px;
+        background-color: whitesmoke;
+        margin-bottom: 5px;
+        padding: 2px;
+        border-radius: 3px;
+        transition: all ease .2s;
+    }
+
+    nav a.toggle {
+        display: block;
+        color: whitesmoke;
+        text-decoration: none;
+        padding: 5px;
+    }
+
+    nav ul {
+        display: none;
+    }
+    
+    nav.active ul {
+        display: flex; /*exibir a lista de navegação qdo o menu estiver ativo.*/
+        flex-direction: column;
+        justify-content: unset;
+        background-color: whitesmoke;
+        position: absolute;
+        top: 95%;
+        right: 0;
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+        z-index: 1;
+        
+    }
+
+    nav.active ul li {
+        display: block;
+        text-align: center;
+    }
+
+    nav ul li a {
+        font-size: 0.7rem;
+    }
+
+    nav.active ul li a {
+        display: block;
+        padding: 10px;
+        border-bottom: 1px solid #fff;
+        color: #004225;
+    }
+
+    #logo-post {
+        width: 110px;
+        filter: drop-shadow(0px 1px 1px #000000);
+    }
+}
+
+@media only screen and (max-width: 715px) {
+
+    header {
+        display: flex;
+        padding: 10px 0;
+        z-index: 2;
+        position: relative;
+        max-width: 100%;
+        padding: 20px;
+        filter: drop-shadow(0px 1px 1px #000000);
+    }
+    
+    .menu-toggle {
+        display: block; /*exibe o menu oculto*/
+        position: absolute;
+        cursor: pointer;
+        padding: 10px;
+        top: 30%;
+        left: 640px;
+        filter: drop-shadow(0px 1px 1px #000000);
+    }
+
+    .menu-toggle span {
+        display: block;
+        width: 25px;
+        height: 2px;
+        background-color: whitesmoke;
+        margin-bottom: 5px;
+        padding: 2px;
+        border-radius: 3px;
+        transition: all ease .2s;
+    }
+
+    nav a.toggle {
+        display: block;
+        color: whitesmoke;
+        text-decoration: none;
+        padding: 5px;
+    }
+
+    nav ul {
+        display: none;
+    }
+    
+    nav.active ul {
+        display: flex; /*exibir a lista de navegação qdo o menu estiver ativo.*/
+        flex-direction: column;
+        justify-content: unset;
+        background-color: whitesmoke;
+        position: absolute;
+        top: 95%;
+        right: 0;
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+        z-index: 1;
+        
+    }
+
+    nav.active ul li {
+        display: block;
+        text-align: center;
+    }
+
+    nav ul li a {
+        font-size: 0.7rem;
+    }
+
+    nav.active ul li a {
+        display: block;
+        padding: 10px;
+        border-bottom: 1px solid #fff;
+        color: #004225;
+    }
+
+}
+
+@media only screen and (max-width: 541px) {
+    
+    header {
+        display: flex;
+        padding: 10px 0;
+        z-index: 2;
+        position: relative;
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .menu-toggle {
+        display: block; /*exibe o menu oculto*/
+        position: absolute;
+        cursor: pointer;
+        padding: 10px;
+        top: 30%;
+        left: 480px;
+    }
+
+    .menu-toggle span {
+        display: block;
+        width: 25px;
+        height: 2px;
+        background-color: whitesmoke;
+        margin-bottom: 5px;
+        padding: 2px;
+        border-radius: 3px;
+        transition: all ease .2s;
+    }
+
+    nav a.toggle {
+        display: block;
+        color: whitesmoke;
+        text-decoration: none;
+        padding: 5px;
+    }
+
+    nav ul {
+        display: none;
+    }
+    
+    nav.active ul {
+        display: flex; /*exibir a lista de navegação qdo o menu estiver ativo.*/
+        flex-direction: column;
+        justify-content: unset;
+        background-color: whitesmoke;
+        position: absolute;
+        top: 95%;
+        right: 0;
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+        z-index: 1;
+        
+    }
+
+    nav.active ul li {
+        display: block;
+        text-align: center;
+    }
+
+    nav ul li a {
+        font-size: 0.8rem;
+    }
+
+    nav.active ul li a {
+        display: block;
+        padding: 10px;
+        border-bottom: 1px solid #fff;
+        color: #004225;
+    }
+
+    #logo-post {
+        width: 100px;
+        filter: drop-shadow(0px 1px 1px #000000);
+    }
+
+}
+
+@media only screen and (max-width: 431px) {
+
+    header {
+        display: flex;
+        padding: 10px 0;
+        z-index: 2;
+        position: relative;
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .menu-toggle {
+        display: block; /*exibe o menu oculto*/
+        position: absolute;
+        cursor: pointer;
+        padding: 10px;
+        top: 30%;
+        left: 355px;
+    }
+
+    .menu-toggle span {
+        display: block;
+        width: 25px;
+        height: 2px;
+        background-color: whitesmoke;
+        margin-bottom: 5px;
+        padding: 2px;
+        border-radius: 3px;
+        transition: all ease .2s;
+    }
+
+    nav a.toggle {
+        display: block;
+        color: whitesmoke;
+        text-decoration: none;
+        padding: 5px;
+    }
+
+    nav ul {
+        display: none;
+    }
+    
+    nav.active ul {
+        display: flex; /*exibir a lista de navegação qdo o menu estiver ativo.*/
+        flex-direction: column;
+        justify-content: unset;
+        background-color: whitesmoke;
+        position: absolute;
+        top: 95%;
+        right: 0;
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+        z-index: 1;
+        
+    }
+
+    nav.active ul li {
+        display: block;
+        text-align: center;
+    }
+
+    nav ul li a {
+        font-size: 0.7rem;
+    }
+
+    nav.active ul li a {
+        display: block;
+        padding: 10px;
+        border-bottom: 1px solid #fff;
+        color: #004225;
+    }
+
+    #logo-post {
+        width: 100px;
+        filter: drop-shadow(0px 1px 1px #000000);
+    }
+
+}
+
+@media only screen and (max-width: 416px) {
+
+    header {
+        display: flex;
+        padding: 10px 0;
+        z-index: 2;
+        position: relative;
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .menu-toggle {
+        display: block; /*exibe o menu oculto*/
+        position: absolute;
+        cursor: pointer;
+        padding: 10px;
+        top: 30%;
+        left: 355px;
+    }
+
+    .menu-toggle span {
+        display: block;
+        width: 25px;
+        height: 2px;
+        background-color: whitesmoke;
+        margin-bottom: 5px;
+        padding: 2px;
+        border-radius: 3px;
+        transition: all ease .2s;
+    }
+
+    nav a.toggle {
+        display: block;
+        color: whitesmoke;
+        text-decoration: none;
+        padding: 5px;
+    }
+
+    nav ul {
+        display: none;
+    }
+    
+    nav.active ul {
+        display: flex; /*exibir a lista de navegação qdo o menu estiver ativo.*/
+        flex-direction: column;
+        justify-content: unset;
+        background-color: whitesmoke;
+        position: absolute;
+        top: 95%;
+        right: 0;
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+        z-index: 1;
+        
+    }
+
+    nav.active ul li {
+        display: block;
+        text-align: center;
+    }
+
+    nav ul li a {
+        font-size: 0.7rem;
+    }
+
+    nav.active ul li a {
+        display: block;
+        padding: 10px;
+        border-bottom: 1px solid #fff;
+        color: #004225;
+    }
+
+    #logo-post {
+        width: 100px;
+        filter: drop-shadow(0px 1px 1px #000000);
+    }
+
+}
+
+@media only screen and (max-width: 394px) {
+
+    header {
+        display: flex;
+        padding: 10px 0;
+        z-index: 2;
+        position: relative;
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .menu-toggle {
+        display: block; /*exibe o menu oculto*/
+        position: absolute;
+        cursor: pointer;
+        padding: 10px;
+        top: 30%;
+        left: 335px;
+    }
+
+    .menu-toggle span {
+        display: block;
+        width: 25px;
+        height: 2px;
+        background-color: whitesmoke;
+        margin-bottom: 5px;
+        padding: 2px;
+        border-radius: 3px;
+        transition: all ease .2s;
+    }
+
+    nav a.toggle {
+        display: block;
+        color: whitesmoke;
+        text-decoration: none;
+        padding: 5px;
+    }
+
+    nav ul {
+        display: none;
+    }
+    
+    nav.active ul {
+        display: flex; /*exibir a lista de navegação qdo o menu estiver ativo.*/
+        flex-direction: column;
+        justify-content: unset;
+        background-color: whitesmoke;
+        position: absolute;
+        top: 95%;
+        right: 0;
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+        z-index: 1;
+        
+    }
+
+    nav.active ul li {
+        display: block;
+        text-align: center;
+    }
+
+    nav ul li a {
+        font-size: 0.7rem;
+    }
+
+    nav.active ul li a {
+        display: block;
+        padding: 10px;
+        border-bottom: 1px solid #fff;
+        color: #004225;
+    }
+
+    #logo-post {
+        width: 100px;
+        filter: drop-shadow(0px 1px 1px #000000);
+    }
+
+}
+
+@media screen and (max-width: 376px) {
+
+    header {
+        display: flex;
+        padding: 10px 0;
+        z-index: 2;
+        position: relative;
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .menu-toggle {
+        display: block; /*exibe o menu oculto*/
+        position: absolute;
+        cursor: pointer;
+        padding: 10px;
+        top: 30%;
+        left: 315px;
+    }
+
+    .menu-toggle span {
+        display: block;
+        width: 25px;
+        height: 2px;
+        background-color: whitesmoke;
+        margin-bottom: 5px;
+        padding: 2px;
+        border-radius: 3px;
+        transition: all ease .2s;
+    }
+
+    nav a.toggle {
+        display: block;
+        color: whitesmoke;
+        text-decoration: none;
+        padding: 5px;
+    }
+
+    nav ul {
+        display: none;
+    }
+    
+    nav.active ul {
+        display: flex; /*exibir a lista de navegação qdo o menu estiver ativo.*/
+        flex-direction: column;
+        justify-content: unset;
+        background-color: whitesmoke;
+        position: absolute;
+        top: 95%;
+        right: 0;
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+        z-index: 1;
+        
+    }
+
+    nav.active ul li {
+        display: block;
+        text-align: center;
+    }
+
+    nav ul li a {
+        font-size: 0.6rem;
+    }
+
+    nav.active ul li a {
+        display: block;
+        padding: 10px;
+        border-bottom: 1px solid #fff;
+        color: #004225;
+    }
+
+    #logo-post {
+        width: 100px;
+        filter: drop-shadow(0px 1px 1px #000000);
+    }
+
+}
+
+@media only screen and (max-width: 361px) {
+
+    header {
+        display: flex;
+        padding: 10px 0;
+        z-index: 2;
+        position: relative;
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .menu-toggle {
+        display: block; /*exibe o menu oculto*/
+        position: absolute;
+        cursor: pointer;
+        padding: 10px;
+        top: 30%;
+        left: 310px;
+    }
+
+    .menu-toggle span {
+        display: block;
+        width: 25px;
+        height: 2px;
+        background-color: whitesmoke;
+        margin-bottom: 5px;
+        padding: 2px;
+        border-radius: 3px;
+        transition: all ease .2s;
+    }
+
+    nav a.toggle {
+        display: block;
+        color: whitesmoke;
+        text-decoration: none;
+        padding: 5px;
+    }
+
+    nav ul {
+        display: none;
+    }
+    
+    nav.active ul {
+        display: flex; /*exibir a lista de navegação qdo o menu estiver ativo.*/
+        flex-direction: column;
+        justify-content: unset;
+        background-color: whitesmoke;
+        position: absolute;
+        top: 95%;
+        right: 0;
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+        z-index: 1;
+        
+    }
+
+    nav.active ul li {
+        display: block;
+        text-align: center;
+    }
+
+    nav ul li a {
+        font-size: 0.6rem;
+    }
+
+    nav.active ul li a {
+        display: block;
+        padding: 10px;
+        border-bottom: 1px solid #fff;
+        color: #004225;
+    }
+
+    #logo-post {
+        width: 100px;
+        filter: drop-shadow(0px 1px 1px #000000);
+    }
+}
+
+@media only screen and (max-width: 321px) {
+
+    header {
+        display: flex;
+        padding: 10px 0;
+        z-index: 2;
+        position: relative;
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .menu-toggle {
+        display: block; /*exibe o menu oculto*/
+        position: absolute;
+        cursor: pointer;
+        padding: 10px;
+        top: 30%;
+        left: 260px;
+    }
+
+    .menu-toggle span {
+        display: block;
+        width: 25px;
+        height: 2px;
+        background-color: whitesmoke;
+        margin-bottom: 5px;
+        padding: 2px;
+        border-radius: 3px;
+        transition: all ease .2s;
+    }
+
+    nav a.toggle {
+        display: block;
+        color: whitesmoke;
+        text-decoration: none;
+        padding: 5px;
+    }
+
+    nav ul {
+        display: none;
+    }
+    
+    nav.active ul {
+        display: flex; /*exibir a lista de navegação qdo o menu estiver ativo.*/
+        flex-direction: column;
+        justify-content: unset;
+        background-color: whitesmoke;
+        position: absolute;
+        top: 95%;
+        right: 0;
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+        z-index: 1;
+        
+    }
+
+    nav.active ul li {
+        display: block;
+        text-align: center;
+    }
+
+    nav ul li a {
+        font-size: 0.6rem;
+    }
+
+    nav.active ul li a {
+        display: block;
+        padding: 10px;
+        border-bottom: 1px solid #fff;
+        color: #004225;
+    }
+
+    #logo-post {
+        width: 80px;
+        filter: drop-shadow(0px 1px 1px #000000);
+    }
+
+}

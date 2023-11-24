@@ -1,0 +1,89 @@
+@import url('https://fonts.cdnfonts.com/css/poppins');
+
+  .footer {
+    background:#004225;
+    padding:30px 0px;
+    font-family: 'Play', sans-serif;
+    text-align:center;
+    overflow-x:hidden;
+
+  }
+
+  #logo_footer {
+    max-width: 10%;
+  }
+  
+  .footer .row {
+    width:100%;
+    margin:1% 0%;
+    padding:0.6% 0%;
+    color:gray;
+    font-size:0.8em;
+
+  }
+  
+  .footer .row a {
+    text-decoration:none;
+    color:gray;
+    transition:0.5s;
+
+  }
+  
+  .footer .row a:hover {
+    color:#fff;
+
+  }
+  
+  .footer .row ul{
+    width:100%;
+
+  }
+  
+  .footer .row ul li {
+    display:inline-block;
+    margin:0px 30px;
+    font-size: 1rem;
+
+  }
+  
+  .footer .row a i {
+    font-size:2em;
+    margin:0% 1%;
+
+  }
+
+
+  @media only screen and (max-width: 921px) {
+
+    .footer {
+      padding: 5%;
+      overflow-x:hidden;
+    }
+
+    .logo_footer {
+      margin-bottom: 30px;
+    }
+
+    .logo_footer img {
+      max-width: 15%;
+    }
+
+    .row {
+      text-align: center;
+    }
+  
+    .footer .row ul li {
+      margin: 10px 0px;
+      text-align: center;
+    }
+
+    .footer .row ul li {
+      margin: 1% 2%;
+      font-size: 0.9rem;
+    }
+  
+    .footer .row a i {
+      margin: 0% 3%;
+    }
+  }
+

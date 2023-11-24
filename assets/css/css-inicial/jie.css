@@ -1,0 +1,126 @@
+/* GIE JOE*/
+.gie{
+        
+    background: rgb(244,245,250);
+    background: linear-gradient(90deg, rgba(244,245,250,1) 0%, rgba(21,49,97,1) 100%);
+    display: flex;
+    align-items: center;
+    padding: 100px 10%;  
+    
+}
+
+.home-content-jie h1{
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.home-content-jie h3{
+    font-size: 32px;
+    font-weight: 700;
+    color: #153161;
+}
+
+.home-content-jie p{
+    font-size: 16px;
+    margin: 20px 0 40px;
+}
+
+.home-content-jie .btn-box{
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+
+}
+
+.img-gie{
+    margin: 0;
+    padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+.img-gie img{
+    display: inline-block;
+    max-width: 100px;
+}
+
+.img{
+    max-width: 200px;
+    width: 100%;
+}
+.content-jie{
+    display: flex;
+    flex-direction: column;
+    padding: 0.625rem;
+    align-items: center
+
+}
+.content-jie p{
+    font-size: 1rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 0.625rem 0;
+}
+
+.img{
+    max-width: 300px;
+    width: 100%;
+    max-height: 200px;
+    height: 100%;
+}
+
+.img300{
+    max-width: 300px;
+    width: 100%;
+    max-height: 300px;
+    height: 100%;
+}
+.imgBanner{
+    max-width: 900px;
+    width: 100%;
+    max-height: 200px;
+}
+.img500{
+    max-width: 500px;
+    width: 100%;
+    max-height: 500px;
+    height: 100%;
+}
+
+/*Estilo de img*/
+.flex-img{
+    display: flex;
+    max-width: 300px;
+    width: 100%;
+    max-height: 400px;
+    height: 100%;
+    gap: 1rem;
+    padding: 0.625rem 0;
+}
+.flex-img img{
+    display:inline-block;
+}
+.img400{
+    max-width: 400px;
+}
+
+/*Imagem index*/
+.gie-section{
+    width: 100%;
+    height: 100vh;
+    background: rgb(244,245,250);
+    background: linear-gradient(90deg, rgba(244,245,250,1) 0%, #004225 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.gie-section .content img{
+    border-radius: 20px;
+    height: auto;
+    width: 720px;
+    max-width: 100%;
+    align-items: center;
+}

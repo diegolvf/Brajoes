@@ -1,0 +1,250 @@
+@import url('https://fonts.cdnfonts.com/css/poppins');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../img/s-l1600.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+a {
+    text-decoration: none;
+    color: #f4f5fa;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 0 1.25rem;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #004225;
+    color: #f4f5fa;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #f4f5fa;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+header ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+header ul li {
+    justify-content: space-between;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 1.4rem;
+    margin: 20px;
+}
+
+.post-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80vw;
+    height: auto;
+    background-color: #f2f2f2;
+    border-radius: 12px;
+    margin: 10vh 10vh;
+    padding: 15px;
+    box-shadow: -1px 2px 12px -1px rgba(0,0,0,0.77);
+}
+
+#logo {
+    display: flex;
+    justify-content: center;
+    width: 250px;
+    object-fit: cover;
+    margin: 0 auto;
+    filter: drop-shadow(0px 1px 1px #000000);
+    padding-bottom: 50px;
+}
+
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Hauser';
+    font-style: italic;
+    color:#004225;
+    font-size: 2rem;
+    font-weight: bolder;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+label {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 1.3em;
+    color: #004225;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+}
+
+.title-container input {
+    width: 30vw;
+    height: 5vh;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+}
+
+.button-post {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    filter: drop-shadow(0px 1px 1px #000000);
+}
+
+button {
+    background-color: #ffa500;
+    color: rgba(255, 255, 255); 
+    text-shadow: -1px -1px 2px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,0.8);
+    padding: 15px 30px;
+    margin: 10px;
+    border: none;
+    border-radius: 4px;
+    font-family: 'Poppins' Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: rgba(79,67,174, 0.9);
+    transition: 0.40s ease-in-out;
+}
+
+.container p {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 0.8em;
+    color: rgba(79,67,174, 0.9);
+    padding: 10px;
+}
+
+@media screen and (max-width:321px){
+
+    header {
+        display: flex;
+        padding: 10px 0;
+        z-index: 2;
+        position: relative;
+        max-width: 100%;
+        padding: 20px;
+    }
+    
+    .logo-header {
+        width: 80px;
+    }
+    
+    .menu-toggle {
+        display: block; /*exibe o menu oculto*/
+        position: absolute;
+        cursor: pointer;
+        padding: 10px;
+        top: 30%;
+        left: 260px;
+    }
+    
+    .menu-toggle span {
+        display: block;
+        width: 25px;
+        height: 2px;
+        background-color: whitesmoke;
+        margin-bottom: 5px;
+        padding: 2px;
+        border-radius: 3px;
+        transition: all ease .2s;
+    }
+    
+    nav a.toggle {
+        display: block;
+        color: whitesmoke;
+        text-decoration: none;
+        padding: 5px;
+    }
+    
+    nav ul {
+        display: none;
+    }
+    
+    nav.active ul {
+        display: flex; /*exibir a lista de navegação qdo o menu estiver ativo.*/
+        flex-direction: column;
+        justify-content: unset;
+        background-color: #004225;
+        position: absolute;
+        top: 95%;
+        right: 0;
+        width: 55%;
+        height: auto;
+        border-radius: 5px;
+        z-index: 1;
+        
+    }
+
+    nav.active ul li {
+        display: block;
+        padding: 20px;
+        text-align: center;
+        color: whitesmoke;
+    }
+
+    nav ul li a {
+        font-size: 0.6rem;
+    }
+    
+    nav.active ul li a {
+        display: block;
+        padding: 10px;
+        border-bottom: 1px solid #fff;
+    }
+
+    .container {
+        padding: 0 1.25rem;
+    }
+
+    .post-form {
+        z-index: 0;
+    }
+
+    label {
+        font-size: 0.8rem;
+    }
+
+    .title-container input {
+        width: 30vw;
+        height: 5vh;
+    }
+}
